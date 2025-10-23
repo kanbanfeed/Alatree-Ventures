@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alatree Ventures — Strategic Enablement</title>
   <meta name="description" content="Project Management, Strategic Communications, and Technology Enablement for institutional clients across the globe." />
-  <!-- Typography: Serif (headings) + Sans (body) -->
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Corrected Typography: Playfair Display (headings) + Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Leaflet CSS for interactive map -->
@@ -15,10 +15,11 @@
 </head>
 <body>
   <div id="progress" aria-hidden="true"></div>
+  
   <!-- Header -->
   <header id="hdr">
     <div class="container topbar">
-      <div class="brand" aria-label="Alatree Ventures"><span class="ey"></span>Alatree Ventures</div>
+      <div class="brand" aria-label="Alatree Ventures">Alatree Ventures</div>
       
       <!-- Desktop Navigation -->
       <nav class="desktop-nav" aria-label="Primary">
@@ -26,7 +27,7 @@
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a class="cta-outline" href="">Get in Touch</a>
+        <button class="cta-outline" href="">BOOK A CALL</button>
       </nav>
       
       <!-- Mobile Toggle -->
@@ -43,18 +44,18 @@
       <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
-      <a class="mobile-cta" href="">Get in Touch</a>
+      <a class="mobile-cta" href="">BOOK A CALL</a>
     </div>
   </header>
 
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-inner reveal">
-      <div class="eyebrow">Strategic Enablement</div>
-      <h1>Enabling capital with clarity and precision.</h1>
+      <div class="eyebrow">STRATEGIC ENABLEMENT</div>
+      <h1>Enabling business with clarity and precision.</h1>
       <p class="subtext">Delivering project management, strategic communications, and technology enablement for institutional clients in the US, Europe, UK, Middle East, India and beyond.</p>
       <div class="cta-row">
-        <a class="cta-primary" href="">Get in Touch</a>
+        <a class="cta-primary" href="">BOOK A CALL</a>
         <a class="cta-secondary" href="#services">Explore our services</a>
       </div>
     </div>
@@ -63,7 +64,7 @@
   <!-- Trust row -->
   <div class="trust" aria-label="Trusted by">
     <div class="container inner">
-      <div class="tag">Trusted by leading institutions</div>
+      <div class="tag">TRUSTED BY LEADING INSTITUTIONS</div>
       <div class="logos" aria-hidden="true">
         <div class="logo">Family Offices</div>
         <div class="logo">Investment Funds</div>
@@ -75,21 +76,21 @@
   </div>
 
   <!-- Our Pillars -->
-  <section id="services" class="section-light">
+  <section id="services" class="section-light" >
     <div class="container">
-      <h2 class="section-title">Our Core Pillars</h2>
+      <h2 class="section-title">OUR CORE PILLARS</h2>
       <div class="cards" role="list">
-        <article class="card reveal parallax" role="listitem" data-parallax-speed="0.1">
+        <article class="card reveal" role="listitem">
           <i class="fas fa-tasks icon"></i>
           <h3>Project Management</h3>
           <p>Providing efficiency, oversight, and disciplined delivery from inception to completion.</p>
         </article>
-        <article class="card reveal parallax" role="listitem" style="transition-delay: 0.15s;" data-parallax-speed="0.15">
+        <article class="card reveal" role="listitem" style="transition-delay: 0.15s;">
           <i class="fas fa-bullhorn icon"></i>
           <h3>Strategic Communications</h3>
           <p>Crafting key messaging, brand positioning, and stakeholder engagement strategies.</p>
         </article>
-        <article class="card reveal parallax" role="listitem" style="transition-delay: 0.3s;" data-parallax-speed="0.2">
+        <article class="card reveal" role="listitem" style="transition-delay: 0.3s;">
           <i class="fas fa-cogs icon"></i>
           <h3>Technology Enablement</h3>
           <p>Deploying tools and services to drive digital transformation and operational excellence.</p>
@@ -101,23 +102,27 @@
   <!-- Why Alatree -->
   <section id="about" class="section-medium" aria-labelledby="why-title">
     <div class="container">
-      <h2 id="why-title" class="section-title">Why Choose Alatree</h2>
+      <h2 id="why-title" class="section-title">WHY CHOOSE ALATREE</h2>
       <div class="proofs" role="list">
         <div class="proof reveal" role="listitem">
-          <i class="fas fa-award" style="font-size: 2.5rem; color: var(--navy); margin-bottom: 20px;"></i>
+          <i class="fas fa-award proof-icon"></i>
           <h3>Licensed & Compliant</h3>
           <p class="lead">Fully regulated with a governance-first approach.</p>
         </div>
         <div class="proof reveal" role="listitem" style="transition-delay: 0.15s;">
-          <i class="fas fa-globe-americas" style="font-size: 2.5rem; color: var(--navy); margin-bottom: 20px;"></i>
+          <i class="fas fa-globe-americas proof-icon"></i>
           <h3>Global Reach</h3>
           <p class="lead">Operating seamlessly across international markets.</p>
         </div>
         <div class="proof reveal" role="listitem" style="transition-delay: 0.3s;">
-          <i class="fas fa-user-tie" style="font-size: 2.5rem; color: var(--navy); margin-bottom: 20px;"></i>
+          <i class="fas fa-user-tie proof-icon"></i>
           <h3>Seasoned Expertise</h3>
           <p class="lead">Leadership with decades of multi-disciplinary experience.</p>
         </div>
+      </div>
+      <!-- Secondary CTA as requested -->
+      <div class="why-cta-container">
+        <a class="cta-primary why-cta" href="">BOOK A CALL</a>
       </div>
     </div>
   </section>
@@ -125,28 +130,34 @@
   <!-- Selected Mandates -->
   <section aria-labelledby="cases-title" class="section-light">
     <div class="container">
-      <h2 id="cases-title" class="section-title">Selected Mandates</h2>
+      <h2 id="cases-title" class="section-title">SELECTED MANDATES</h2>
       <div class="cases">
         <article class="case reveal">
-          <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio management setup">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern architectural building">
+          </div>
           <div class="content">
-            <div class="kicker">Family Office</div>
+            <div class="kicker">FAMILY OFFICE</div>
             <h3>Portfolio PMO Establishment</h3>
             <p>Implemented a comprehensive cross-asset PMO with standardized reporting and risk frameworks.</p>
           </div>
         </article>
         <article class="case reveal" style="transition-delay: 0.15s;">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Strategic communications planning">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate boardroom">
+          </div>
           <div class="content">
-            <div class="kicker">Institutional Client</div>
+            <div class="kicker">INSTITUTIONAL CLIENT</div>
             <h3>Strategic Communications Framework</h3>
             <p>Developed investor messaging and compliance-aligned disclosure processes across multiple jurisdictions.</p>
           </div>
         </article>
         <article class="case reveal" style="transition-delay: 0.3s;">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Technology enablement project">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Global business meeting">
+          </div>
           <div class="content">
-            <div class="kicker">Enterprise</div>
+            <div class="kicker">ENTERPRISE</div>
             <h3>Technology Enablement Initiative</h3>
             <p>Deployed secure data infrastructure and automated workflows to streamline deal execution.</p>
           </div>
@@ -159,18 +170,22 @@
   <div class="cta-band">
     <div class="wrap">
       <div class="lead">Seeking disciplined execution and strategic<br> clarity for your initiatives?</div>
-      <a href="#contact">Get in Touch</a>
+      <a href="#contact">BOOK A CALL</a>
     </div>
   </div>
 
   <!-- Global Presence -->
   <section class="map-section section-dark" aria-labelledby="global-title">
     <div class="container">
-      <h2 id="global-title" class="section-title">Our Global Presence</h2>
+      <h2 id="global-title" class="section-title">OUR GLOBAL PRESENCE</h2>
       <div class="map-container reveal">
+        <div class="world-map-backdrop"></div>
         <div id="global-map"></div>
       </div>
-      <div class="map-caption">Strategic presence across key global markets including the US, Europe, UK, Middle East, India and beyond.</div>
+      <div class="map-caption">
+        <div class="license-text">LICENSED UAE ENTITY – SERVING GLOBAL CLIENTS</div>
+        Strategic presence across key global markets including the US, Europe, UK, Middle East, India and beyond.
+      </div>
     </div>
   </section>
 
@@ -200,15 +215,15 @@
     </div>
     <div class="footer-another">
       <div>
-      <div class="footer-title">Our Office</div>
-      <div class="office-location">
-    <div class="office-title">Dubai Headquarters</div>
-    <div class="office-address">
-      The Prime Tower, Office No. 2702-03<br>
-      Business Bay, Dubai, UAE<br>
-      PO Box 451914
-    </div>
-      </div>
+        <div class="footer-title">Our Office</div>
+        <div class="office-location">
+          <div class="office-title">Dubai Headquarters</div>
+          <div class="office-address">
+            The Prime Tower, Office No. 2702-03<br>
+            Business Bay, Dubai, UAE<br>
+            PO Box 451914
+          </div>
+        </div>
       </div>
     </div>
     
