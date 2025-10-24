@@ -516,7 +516,7 @@ section{
 
 .case{ 
   background: var(--paper); 
-  border: 1px solid var(--rule); 
+  border: 2px solid var(--rule); 
   border-radius: var(--radius); 
   overflow: hidden; 
   box-shadow: var(--shadow-soft); 
@@ -526,7 +526,7 @@ section{
 .case:hover{ 
   transform: translateY(-5px); 
   box-shadow: var(--shadow-hover); 
-  border-color: var(--navy); 
+  border-color: var(--gold); 
 }
 
 .image-container {
@@ -631,11 +631,14 @@ section{
 
 .map-container { 
   height: 400px; 
+  width: 80%;
   background: var(--paper); 
   border-radius: var(--radius); 
   overflow: hidden; 
   box-shadow: var(--shadow-soft);
   position: relative;
+  border: 2px solid var(--gold);
+  margin: 0 auto;
 }
 
 .world-map-backdrop {
@@ -754,7 +757,7 @@ footer{
 /* FOOTER ADDRESS - More breathing space */
 .footer-another{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 32px; 
   padding: 40px 0;
   border-top: 1px solid rgba(255,255,255,0.1);
@@ -781,7 +784,7 @@ footer{
 /* SOCIAL MEDIA */
 .social-section {
   background: var(--navy);
-  padding: 40px 0;
+  padding: 20px 0;
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -851,9 +854,19 @@ footer{
         flex-direction: column;
         text-align: center;
   }
+  .map-container{
+    width: 100%;
+    height:400px
+  }
   
   .hero {
     padding: calc(var(--section-y) * 0.8) 0;
+  }
+  .footer-another{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    margin-top: -40px;
   }
 }
 
