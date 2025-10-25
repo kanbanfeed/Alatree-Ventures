@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Alatree Ventures</title>
+  <meta name="description" content="Get in touch with Alatree Ventures for strategic enablement services." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="progress" aria-hidden="true"></div>
+  
+  <!-- Include Header -->
+  <div id="header-placeholder"></div>
+
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <div class="container contact-hero-inner">
+      <h1>Get In Touch</h1>
+      <p class="subtext">Ready to discuss how we can enable your business with clarity and precision? Reach out to start the conversation.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h3>Our Office</h3>
+              <p>
+                The Prime Tower, Office No. 2702-03<br>
+                Business Bay, Dubai, UAE<br>
+                PO Box 451914
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h3>Email Us</h3>
+              <p>info@alatreeventures.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mnnoakwg" method="POST">
+            <div class="form-group">
+              <label for="name" class="required">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="required">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="required">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="required">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your project or how we can help you..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Simple HTML include using fetch
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+
+    // REMOVE the form event listener to allow Formspree to work
+    // Formspree will handle the form submission naturally
+  </script>
+
+  <!-- Include your main script for progress bar and other functionality -->
+  <script src="./script.js"></script>
+</body>
+</html>
